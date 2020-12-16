@@ -141,12 +141,6 @@ class _equalized_linear(th.nn.Module):
         return linear(x, self.weight * self.scale,
                       self.bias if self.use_bias else None)
 
-
-# -----------------------------------------------------------------------------------
-# Pixelwise feature vector normalization.
-# reference:
-# https://github.com/tkarras/progressive_growing_of_gans/blob/master/networks.py#L120
-# -----------------------------------------------------------------------------------
 class PixelwiseNorm(th.nn.Module):
     def __init__(self):
         super(PixelwiseNorm, self).__init__()

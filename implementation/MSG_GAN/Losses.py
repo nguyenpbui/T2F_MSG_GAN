@@ -2,12 +2,6 @@
 
 import torch as th
 
-
-# TODO_complete Major rewrite: change the interface to use only predictions
-# for real and fake samples
-# The interface doesn't need to change to only use predictions for real and fake samples
-# because for loss such as WGAN-GP requires the samples to calculate gradient penalty
-
 class GANLoss:
     """
     Base class for all losses
